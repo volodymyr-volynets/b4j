@@ -1,3 +1,93 @@
-@import 'css/reset.css';
 @import 'grid.less';
 @import 'elements.less';
+
+@columns: 12;
+@column-width: 80;
+@gutter-width: 0;
+
+.center {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Arvo', serif;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    background-color: red;
+}
+
+nav {
+    .column(12);
+    height: 30px;
+
+    ul {
+
+        li {
+            float: left;
+            width: 150px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 6px;
+        }
+    }
+}
+
+#wrapper {
+
+    margin-top: 20px;
+
+    article {
+        .column(9);
+        .border-radius(5px, 5px, 5px, 5px);
+        .drop-shadow(0, 0, 10px, 0.75);
+        background-color: green;
+        height: 400px;
+        z-index: 9999;
+    }
+
+    aside {
+        z-index: 0;
+        .column(3);
+        // background-color: blue;
+        ul {
+            margin-top: 23px;
+            li {
+                height: 70px;
+                // background-color: yellow;
+                margin-top: 1px;
+                position: relative;
+                a {
+                    position: absolute;
+                    left: 50px;
+                    top: 17px;
+                    font-size: 2em;
+                    text-decoration: none;
+                }
+            }
+
+            .active {
+                position: relative;
+                background-color: green;
+                .drop-shadow(-3px, 0, 10px, 0.75);
+                // border: 1px solid rgba(0,0,0,0.50);
+                .border-radius(0, 0, 7px, 7px);
+                border-right: none;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+}
