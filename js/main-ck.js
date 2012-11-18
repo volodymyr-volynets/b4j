@@ -1,0 +1,1 @@
+$(function(){$tabContentDivs=$(".content-tabs-inner");$sideTabs=$("#side-tabs li");var e=function(e){$sideTabs.removeClass("active");$tabContentDivs.removeClass("active");$(e+"-tab").addClass("active");$(e+"-tab-link").addClass("active")},t=location.hash.trim();t.length&&e(location.hash);$sideTabs.click(function(){var t=$(this).find("a").attr("href");e(t)})});
