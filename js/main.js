@@ -48,8 +48,17 @@ $(function() {
     $tabContentDivs = $(".content-tabs-inner");
     $sideTabs = $("#side-tabs li");
 
+    var tabs = ["who", "what", "where", "when", "why"].map(function(item) {
+        return "#" + item;
+    }).reduce(function(acc, item) {
+        acc[item] = true;
+        return acc;
+    }, {});
+
     // expects #who, #what, #where, etc...
     var setActiveTab = function(tabName) {
+
+        if (!(tabName in tabs)) return;
 
         $sideTabs.removeClass("active");
         $tabContentDivs.removeClass("active");
@@ -68,9 +77,10 @@ $(function() {
     $sideTabs.click(function() {
         // grab the href from the child link
         var tabName = $(this).find("a").attr("href");
+
         setActiveTab(tabName);
     }); 
 
     // initialize the map
-    initializeMap();
+    //initializeMap();
 });

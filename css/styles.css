@@ -217,8 +217,9 @@ body {
   height: 40px;
 }
 #inner-footer {
-  background-image: url('../img/debut_dark.png');
   height: 40px;
+  background-color: #3F7084 !important;
+  color: white;
 }
 #footer-content {
   margin-top: 13px;
