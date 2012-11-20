@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" href="css/clearfix.css">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link href='http://fonts.googleapis.com/css?family=Arvo:700' rel='stylesheet' type='text/css'>
         <!--[if !IE 7]>
@@ -24,11 +25,11 @@
                 <div class="center">
                     <div id="nav">
                         <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#nav3">nav2</a></li>
-                            <li><a href="#pictures">Pictures</a></li>
-                            <li><a href="#registration">Registration</a></li>
-                            <li><a href="#councelors">Councelors</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="poster.html">Poster</a></li>
+                            <li><a href="pictures.html">Pictures</a></li>
+                            <li><a href="registration.html">Registration</a></li>
+                            <li><a href="counselors.html">Counselors</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,11 +39,11 @@
                     <div id="main-content">
                         <div id="side-tabs">
                             <ul>
-                                <li id="who-tab-link" class="active">
-                                    <a href="#who">who</a>
-                                </li>
                                 <li id="what-tab-link">
                                     <a href="#what">what</a>
+                                </li>
+                                <li id="who-tab-link" class="active">
+                                    <a href="#who">who</a>
                                 </li>
                                 <li id="where-tab-link">
                                     <a href="#where">where</a>
@@ -57,19 +58,31 @@
                         </div>
                         <div id="content-tabs">
                             <div id="who-tab" class="content-tabs-inner active">
-                                Who?
+                                For Ukrainian Catholic children of the <br>
+                                Eparchy of Toronto 
+                                <br>in grades 3-8.
                             </div>
                             <div id="what-tab" class="content-tabs-inner">
-                                What?
+                                A week of faith, <br>
+                                friendship <br> 
+                                and fun.
                             </div>
-                            <div id="where-tab" class="content-tabs-inner">
-                                Where?
+                            <div id="where-tab" class="content-tabs-inner clearfix">
+                                <div id="location-search-bar">
+                                    Mount Mary Retreat Centre run by the Ukrainian Catholic Sister Servants of Mary Immaculate in Ancaster
+                                    <input type="text">
+                                    to "Target Address"
+                                </div>
+                                <div id="map-canvas"></div>
+                                <div id="directions-panel">directions</div>
                             </div>
                             <div id="when-tab" class="content-tabs-inner">
-                                When?
+                                <span class="special">Sunday</span>, March 10th <br> (early evening) to <span class="special">Saturday</span>, March 16th <br> (noon) 2013.
                             </div>
                             <div id="why-tab" class="content-tabs-inner">
-                                Why?
+                                To learn more about God, <br>
+                                our Byzantine traditions <br>
+                                and ourselves.
                             </div>
                         </div>
                     </div>
@@ -85,9 +98,8 @@
             </div>
         </div>
 
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.2.min.js"><\/script>')</script>
-
         <script src="js/main.js"></script>
     </body>
 </html>

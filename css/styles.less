@@ -11,7 +11,6 @@
 
 html, body {
   height: 100%;
-  font-family: 'Arvo', serif;
   background-image: url('../img/creampaper.png');
 }
 
@@ -24,7 +23,7 @@ html, body {
 
 /* header */
 
-@header-height: 150px;
+@header-height: 200px;
 @content-width: 960px;
 
 @nav-links-height: 40px;
@@ -43,9 +42,10 @@ html, body {
 #logo {
     color: white;
     position: absolute;
-    left: 40px;
-    top: 10px;
+    left: 50px;
+    top: 50px;
     font-size: 90px;
+    display: none;
 }
 
 #nav {
@@ -72,7 +72,8 @@ html, body {
             width: @link-item-width;
             height: 100%;
             text-align: center;
-            line-height: 2.4em;
+            line-height: 1.9em;
+            font-size: 1.5em;
         }
 
         li:hover {
@@ -102,6 +103,7 @@ html, body {
 #main {
     .column(12);
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 #side-tabs {
@@ -109,7 +111,7 @@ html, body {
     .column(3);
 
     ul {
-        margin-top: 23px;
+        margin-top: 31px;
         li {
             height: 70px;
             margin-top: 1px;
@@ -120,7 +122,7 @@ html, body {
                 width: 100%;
                 height: 100%;
                 text-align: center;
-                line-height: 2.2em;
+                line-height: 2.6em;
                 font-size: 2em;
                 text-decoration: none;
                 color: black;
@@ -151,10 +153,12 @@ html, body {
 }
 
 .content-tabs-inner {
-    margin: 20px;
+    margin: 50px;
+    margin-left: 65px;
     display: none;
-
-    
+    color: white;
+    font-size: 4em;
+    line-height: 100px;
 }
 
 .content-tabs-inner.active {
@@ -171,6 +175,10 @@ html, body {
 
 #main-content {
     .column(12);
+}
+
+#main-content li {
+    list-style-type: circle;
 }
 
 #inner-main-content {
@@ -204,3 +212,26 @@ html, body {
   height: @footer-height;
 }
 
+#location-search-bar {
+    width: 100%;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+#map-canvas {
+    height: 440px;
+    width: 450px;
+    float: left;
+}
+
+#directions-panel {
+    height: 400px;
+    width: 220px;
+    margin-left: 10px;
+    float: left;
+}
+
+span.special {
+    font-weight: bold;
+    font-style: italic;
+}

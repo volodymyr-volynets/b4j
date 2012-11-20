@@ -28,7 +28,6 @@ body:after {
 html,
 body {
   height: 100%;
-  font-family: 'Arvo', serif;
   background-image: url('../img/creampaper.png');
 }
 .center {
@@ -40,7 +39,7 @@ body {
 /* header */
 #header {
   width: 100%;
-  height: 150px;
+  height: 200px;
   background-image: url('../img/debut_dark.png');
   -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.85);
@@ -49,9 +48,10 @@ body {
 #logo {
   color: white;
   position: absolute;
-  left: 40px;
-  top: 10px;
+  left: 50px;
+  top: 50px;
   font-size: 90px;
+  display: none;
 }
 #nav {
   position: relative;
@@ -72,14 +72,15 @@ body {
   position: relative;
   width: 800px;
   margin-left: 160px;
-  margin-top: 110px;
+  margin-top: 160px;
 }
 #nav ul li {
   float: left;
   width: 160px;
   height: 100%;
   text-align: center;
-  line-height: 2.4em;
+  line-height: 1.9em;
+  font-size: 1.5em;
 }
 #nav ul li:hover {
   background-color: black;
@@ -105,6 +106,7 @@ body {
   width: 960px;
   margin: 0 0px;
   margin-top: 20px;
+  margin-bottom: 30px;
 }
 #side-tabs {
   z-index: 0;
@@ -114,7 +116,7 @@ body {
   margin: 0 0px;
 }
 #side-tabs ul {
-  margin-top: 23px;
+  margin-top: 31px;
 }
 #side-tabs ul li {
   height: 70px;
@@ -127,7 +129,7 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  line-height: 2.2em;
+  line-height: 2.6em;
   font-size: 2em;
   text-decoration: none;
   color: black;
@@ -153,8 +155,12 @@ body {
   margin-bottom: 38px;
 }
 .content-tabs-inner {
-  margin: 20px;
+  margin: 50px;
+  margin-left: 65px;
   display: none;
+  color: white;
+  font-size: 4em;
+  line-height: 100px;
 }
 .content-tabs-inner.active {
   display: block !important;
@@ -174,6 +180,9 @@ body {
   float: left;
   width: 960px;
   margin: 0 0px;
+}
+#main-content li {
+  list-style-type: circle;
 }
 #inner-main-content {
   margin: 40px;
@@ -199,4 +208,24 @@ body {
 }
 .push {
   height: 40px;
+}
+#location-search-bar {
+  width: 100%;
+  background-color: red;
+  margin-bottom: 10px;
+}
+#map-canvas {
+  height: 440px;
+  width: 450px;
+  float: left;
+}
+#directions-panel {
+  height: 400px;
+  width: 220px;
+  margin-left: 10px;
+  float: left;
+}
+span.special {
+  font-weight: bold;
+  font-style: italic;
 }
