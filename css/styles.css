@@ -225,6 +225,10 @@ body {
   font-size: 20px;
   line-height: 27px;
 }
+#main-content code {
+  font-size: 20px;
+  line-height: 27px;
+}
 #inner-main-content {
   margin: 40px;
 }
