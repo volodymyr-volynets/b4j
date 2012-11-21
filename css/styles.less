@@ -11,7 +11,8 @@
 
 html, body {
   height: 100%;
-  background-image: url('../img/creampaper.png');
+  // background-image: url('../img/creampaper.png');
+  background-color: #DAD7C7;
 }
 
 .center {
@@ -31,6 +32,9 @@ html, body {
 
 @link-item-width: @nav-links-width / 5;
 @footer-height: 40px;
+
+// @color1_rgba: rgba();
+@color1: #bfb58f;
 
 #header {
     width: 100%;
@@ -158,13 +162,13 @@ html, body {
         }
 
         li:hover {
-            background-color: black;
-            background-color: rgba(0,0,0,0.2);
+            background-color: @color1;
+            background-color: rgba(191, 181, 143, 0.5)
         }
 
         li.active {
-            background-color: black;
-            background-color: rgba(0,0,0,0.5);
+            background-color: @color1;
+            // background-color: rgba(0,0,0,0.5);
             // .drop-shadow(-3px, 0, 10px, 0.75);
             border-right: none;
         }
@@ -175,17 +179,20 @@ html, body {
     .column(9);
     margin-top: 18px;
     min-height: 380px;
-    background-color: black;
-    background-color: rgba(0,0,0,0.5);
+    background-color: @color1;
+    // background-color: rgba(0,0,0,0.5);
     margin-bottom: 38px;
+    -webkit-box-shadow: inset -9px 9px 15px 5px rgba(0, 0, 0, 0.2);    
+    box-shadow: inset -9px 9px 15px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
 }
 
 .content-tabs-inner {
     margin: 50px;
     margin-left: 65px;
     display: none;
-    color: white;
-    font-size: 4em;
+    color: #404040;
+    font-size: 3em !important;
     line-height: 100px;
 }
 

@@ -28,7 +28,7 @@ body:after {
 html,
 body {
   height: 100%;
-  background-image: url('../img/creampaper.png');
+  background-color: #DAD7C7;
 }
 .center {
   width: 960px;
@@ -155,12 +155,11 @@ body {
   color: black;
 }
 #side-tabs ul li:hover {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #bfb58f;
+  background-color: rgba(191, 181, 143, 0.5);
 }
 #side-tabs ul li.active {
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #bfb58f;
   border-right: none;
 }
 #content-tabs {
@@ -170,16 +169,18 @@ body {
   margin: 0 0px;
   margin-top: 18px;
   min-height: 380px;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #bfb58f;
   margin-bottom: 38px;
+  -webkit-box-shadow: inset -9px 9px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -9px 9px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
 }
 .content-tabs-inner {
   margin: 50px;
   margin-left: 65px;
   display: none;
-  color: white;
-  font-size: 4em;
+  color: #404040;
+  font-size: 3em !important;
   line-height: 100px;
 }
 .content-tabs-inner.active {
