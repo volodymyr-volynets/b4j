@@ -204,28 +204,28 @@ body {
   width: 960px;
   margin: 0 0px;
 }
-#main-content ul {
+#main-content #main-content-inner ul {
   margin-left: 30px;
   margin-bottom: 25px;
   margin-top: 25px;
 }
-#main-content ul li {
+#main-content #main-content-inner ul li {
   list-style-type: circle;
   font-size: 20px;
   line-height: 27px;
 }
-#main-content h1 {
+#main-content #main-content-inner h1 {
   font-size: 33px;
   line-height: 45px;
 }
-#main-content h3 {
+#main-content #main-content-inner h3 {
   font-size: 25px;
 }
-#main-content p {
+#main-content #main-content-inner p {
   font-size: 20px;
   line-height: 27px;
 }
-#main-content code {
+#main-content #main-content-inner code {
   font-size: 20px;
   line-height: 27px;
 }
