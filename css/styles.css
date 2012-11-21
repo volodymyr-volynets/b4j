@@ -204,8 +204,26 @@ body {
   width: 960px;
   margin: 0 0px;
 }
-#main-content li {
+#main-content ul {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+#main-content ul li {
   list-style-type: circle;
+  font-size: 20px;
+  line-height: 27px;
+}
+#main-content h1 {
+  font-size: 33px;
+  line-height: 45px;
+}
+#main-content h3 {
+  font-size: 25px;
+}
+#main-content p {
+  font-size: 20px;
+  line-height: 27px;
 }
 #inner-main-content {
   margin: 40px;
