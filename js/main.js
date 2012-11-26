@@ -48,12 +48,12 @@ $(function() {
     $tabContentDivs = $(".content-tabs-inner");
     $sideTabs = $("#side-tabs li");
 
-    var tabs = ["who", "what", "where", "when", "why"].map(function(item) {
-        return "#" + item;
-    }).reduce(function(acc, item) {
-        acc[item] = true;
-        return acc;
-    }, {});
+    var tabNames = ["who", "what", "where", "when", "why"];
+    var tabs = {};
+
+    for (var i = 0; i < tabNames.length; i++) {
+        tabs["#" + tabNames[i]] = true; 
+    }
 
     // expects #who, #what, #where, etc...
     var setActiveTab = function(tabName) {
