@@ -26,7 +26,7 @@ $(function() {
 
     // set the appropriate tab based on the hash
     if (location.hash) {
-        var hash = location.hash.trim();
+        var hash = location.hash;
         hash.length && setActiveTab(location.hash);
     }
 
