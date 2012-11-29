@@ -25,8 +25,11 @@ $(function() {
     };
 
     // set the appropriate tab based on the hash
-    var hash = location.hash.trim();
-    hash.length && setActiveTab(location.hash);
+    var hash;
+    if (location.hash) {
+        hash = location.hash.trim();
+        hash.length && setActiveTab(location.hash);
+    }
 
     $sideTabs.click(function() {
         // grab the href from the child link
