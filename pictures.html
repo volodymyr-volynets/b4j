@@ -89,23 +89,5 @@
             </div>
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script src="galleria/galleria.js"></script>
-        <script type="text/javascript" src="galleria/themes/classic/galleria.classic.js"></script>
-        <script type="text/javascript" src="js/image_data.json"></script>
-        <script type="text/javascript">
-
-            for (var i = 0; i < window.image_data.length; i++) {
-                window.image_data[i].thumb = window.image_data[i].image;
-                window.image_data[i].link = window.image_data[i].image;
-            }
-
-            console.log(image_data);
-
-            Galleria.loadTheme('galleria/themes/classic/galleria.classic.js');
-            Galleria.run('#galleria', {
-                dataSource: window.image_data,
-                thumbnails: 'lazy'
-            });
-        </script>
     </body>
 </html>
