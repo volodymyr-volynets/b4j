@@ -37,7 +37,7 @@ p a:hover {
 #header a#logo {
 	display: block;
 	height: 86px;
-	padding: 15px 0 0 20px;
+	padding: 7px 0 0 20px;
 }
 #header a#logo img {
 	display: block;
@@ -49,6 +49,7 @@ p a:hover {
 	float: left;
 	list-style: none;
 	margin: 0;
+	margin-top: 9px; /* navbar margin */
 	padding: 0;
 	width: 900px;
 }
