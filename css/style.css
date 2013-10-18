@@ -140,7 +140,7 @@ p a:hover {
 	margin: 0;
 	text-transform: uppercase;
 }
-#body div.header div div h1 a {
+#body div.header div div h1 {
 	color: #e3e699;
 	text-decoration: none;
 }
