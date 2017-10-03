@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ilia Choly -- Developer -- https://twitter.com/icholy
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, LESS
+    LESSELEMENTS,
+    SEMANTIC

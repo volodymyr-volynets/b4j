@@ -1,0 +1,262 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+/*---------------------------------------------------
+    LESS Elements 0.6
+  ---------------------------------------------------
+    A set of useful LESS mixins by Dmitry Fadeyev
+    Special thanks for mixin suggestions to:
+      Kris Van Herzeele,
+      Benoit Adam,
+      Portenart Emile-Victor,
+      Ryan Faerman
+
+    More info at: http://lesselements.com
+-----------------------------------------------------*/
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  background-color: #DAD7C7;
+}
+.center {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+/* header */
+#header {
+  width: 100%;
+  height: 200px;
+  background-color: #3F7084;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.85);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.85);
+}
+#logo {
+  color: white;
+  position: absolute;
+  left: 450px;
+  top: 100px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+#uki-logo {
+  color: white;
+  position: absolute;
+  left: 250px;
+  top: 40px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Georgia, Serif;
+}
+#logo-img {
+  position: absolute;
+  left: -10px;
+  top: 0;
+}
+#nav-wrapper {
+  position: relative;
+}
+#nav {
+  position: relative;
+}
+#nav #active-nav-slider {
+  width: 160px;
+  height: 40px;
+  background-color: black;
+  position: absolute;
+  -moz-opacity: 0.3;
+  -khtml-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  opacity: 0.3;
+  left: 640px;
+}
+#nav ul {
+  height: 40px;
+  position: relative;
+  width: 800px;
+  margin-left: 160px;
+  margin-top: 160px;
+}
+#nav ul li {
+  float: left;
+  width: 160px;
+  height: 100%;
+  text-align: center;
+  line-height: 1.9em;
+  font-size: 1.5em;
+}
+#nav ul li:hover {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#nav ul li.active {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#nav ul a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrapper {
+  margin-top: 20px;
+}
+#main {
+  display: inline;
+  float: left;
+  width: 960px;
+  margin: 0 0px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+#side-tabs {
+  z-index: 0;
+  display: inline;
+  float: left;
+  width: 240px;
+  margin: 0 0px;
+}
+#side-tabs ul {
+  margin-top: 31px;
+}
+#side-tabs ul li {
+  height: 70px;
+  margin-top: 1px;
+  position: relative;
+  cursor: pointer;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+#side-tabs ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 2.6em;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
+#side-tabs ul li:hover {
+  background-color: #bfb58f;
+  background-color: rgba(191, 181, 143, 0.5);
+}
+#side-tabs ul li.active {
+  background-color: #bfb58f;
+  border-right: none;
+}
+#content-tabs {
+  display: inline;
+  float: left;
+  width: 720px;
+  margin: 0 0px;
+  margin-top: 18px;
+  min-height: 380px;
+  background-color: #bfb58f;
+  margin-bottom: 38px;
+  -webkit-box-shadow: inset -9px 9px 15px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -9px 9px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+.content-tabs-inner {
+  margin: 50px;
+  margin-left: 65px;
+  display: none;
+  color: #404040;
+  font-size: 3em !important;
+  line-height: 100px;
+}
+.content-tabs-inner.active {
+  display: block !important;
+}
+#title-content {
+  display: inline;
+  float: left;
+  width: 960px;
+  margin: 0 0px;
+  font-size: 30px;
+  height: 50px;
+  line-height: 1.6em;
+  padding-left: 15px;
+}
+#main-content {
+  display: inline;
+  float: left;
+  width: 960px;
+  margin: 0 0px;
+}
+#main-content #main-content-inner ul {
+  margin-left: 30px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+#main-content #main-content-inner ul li {
+  list-style-type: circle;
+  font-size: 20px;
+  line-height: 27px;
+}
+#main-content #main-content-inner h1 {
+  font-size: 33px;
+  line-height: 45px;
+}
+#main-content #main-content-inner h3 {
+  font-size: 25px;
+}
+#main-content #main-content-inner p {
+  font-size: 20px;
+  line-height: 27px;
+}
+#main-content #main-content-inner code {
+  font-size: 20px;
+  line-height: 27px;
+}
+#inner-main-content {
+  margin: 40px;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -40px;
+}
+#footer {
+  height: 40px;
+}
+#inner-footer {
+  height: 40px;
+  background-color: #3F7084 !important;
+  color: white;
+}
+#footer-content {
+  margin-top: 13px;
+  margin-left: 30px;
+  margin-right: 30px;
+  float: right;
+}
+.push {
+  height: 40px;
+}
+#galleria {
+  height: 600px;
+}
